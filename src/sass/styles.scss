@@ -4,6 +4,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: Montserrat, "Helvetica Neue", sans-serif;
 }
 
 body {
@@ -18,6 +19,11 @@ body {
   //TEMP////////
   height: 200vh;
   //////////////
+}
+
+a {
+  color: $primary-theme-color;
+  text-decoration: none;
 }
 
 section.content {
