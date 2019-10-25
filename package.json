@@ -1,0 +1,29 @@
+{
+  "name": "gulp-starting-file",
+  "version": "1.0.0",
+  "description": "Starting file for all projects",
+  "main": "gulpfile.babel.js",
+  "repository": "github:StanHaakman/Starting-Project",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/helper-module-imports": "^7.0.0",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/register": "^7.6.2",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "jshint": "^2.10.2",
+    "jshint-stylish": "^2.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stan Haakman",
+  "license": "ISC"
+}

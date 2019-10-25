@@ -1,0 +1,15 @@
+/**
+ * Font size & Line height mixins with a `rem` + `px` fallback output
+ */
+@mixin font-size($sizeValue: 1, $lineHeightOffset: false) {
+  font-size: ($sizeValue * 10) * 1px;
+  font-size: $sizeValue * 1rem;
+  @if $lineHeightOffset {
+    line-height: (($sizeValue + $lineHeightOffset) * 10) * 1px;
+    line-height: ($sizeValue + $lineHeightOffset) * 1rem;
+  }
+}
+@mixin line-height($sizeValue: 1) {
+  line-height: ($sizeValue * 10) * 1px;
+  line-height: $sizeValue * 1rem;
+}

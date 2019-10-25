@@ -1,0 +1,14 @@
+@mixin wide()
+{
+  max-width: 1240px;
+}
+
+@mixin medium()
+{
+  max-width: 1020px;
+}
+
+@mixin small()
+{
+  max-width: 800px;
+}
