@@ -15,10 +15,6 @@ body {
   margin: 0;
   max-width: 100vw;
   overflow-x: hidden;
-
-  //TEMP////////
-  height: 200vh;
-  //////////////
 }
 
 a {
@@ -29,8 +25,11 @@ a {
 section.content {
 
   //TEMP////////////
-  height: 40px;
+  height: $nav-line-height;
+  line-height: $nav-line-height;
   background: black;
+  text-align: center;
+  color: #FFF;
   //////////////////
 
   &.wide {

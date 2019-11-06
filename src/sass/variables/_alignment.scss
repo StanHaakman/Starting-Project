@@ -7,6 +7,10 @@ $navigation-align-right: flex-end;
 
 $margin-top-sticky: 300px;
 
+$nav-height: 72px;
+$nav-line-height: $nav-height - 32px;
+$nav-hamburger: $nav-line-height / 2;
+
 /////////////////
 //FOOTER/////////
 /////////////////

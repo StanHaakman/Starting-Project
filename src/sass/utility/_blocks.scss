@@ -1,0 +1,74 @@
+@import "variables/variables";
+@import "mixins/mixins";
+
+.block {
+  width: 100%;
+  position: relative;
+  background: #fff;
+
+  &.full-screen {
+    height: calc(100vh - 72px);
+    max-height: calc(100vh - 72px);
+    overflow: hidden;
+  }
+
+  &.half-screen {
+    height: 50vh;
+    max-height: 50vh;
+    overflow: hidden;
+  }
+
+  &.parallax {
+    display: flex;
+    background: no-repeat fixed center;
+    background-size: cover;
+    justify-content: center;
+    @media(max-width:550px) {
+      background-attachment: scroll;
+    }
+    .parallax-text {
+      color: $white;
+      background: $black;
+      width: fit-content;
+      margin: auto;
+      opacity: 0.8;
+      padding: 15px 20px;
+      text-align: center;
+      font-weight: bold;
+      letter-spacing: 2px;
+      h3 {
+        @include font-size(2, 0.7);
+        margin: 0;
+      }
+      p {
+        @include font-size(1, 0.7);
+        margin: 0;
+      }
+    }
+  }
+
+  &.quote {
+    background: $secondary-theme-color;
+    color: $primary-theme-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      text-align: center;
+      @include font-size(3, 0.5);
+    }
+  }
+
+  &.masonry {
+    margin: auto;
+    width: 100%;
+    max-width: 1020px;
+    .masonry-item {
+      max-width: 80vw;
+      margin: auto;
+      @media screen and (min-width: 768px) {
+        max-width: 290px;
+      }
+    }
+  }
+}

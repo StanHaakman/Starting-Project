@@ -3,9 +3,10 @@
 footer {
   width: 100vw;
   margin: 0;
+  height: 400px;
   min-height: 72px;
   position: absolute;
-  bottom: 0;
+  bottom: -400px;
   left: 0;
   right: 0;
   background: $tertiary-theme-color;

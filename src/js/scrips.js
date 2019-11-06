@@ -7,5 +7,9 @@ $(document).ready(function(){
         $('.menu-list').toggleClass('active');
     });
 
-
+    $('.masonry').masonry({
+        itemSelector: '.masonry-item',
+        horizontalOrder: true,
+        gutter: 5,
+    });
 }());

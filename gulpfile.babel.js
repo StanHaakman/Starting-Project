@@ -64,6 +64,8 @@ function watch()
     gulp.watch('./src/js/*.js', scripts);
 }
 
+const build = gulp.parallel(style, scripts, watch);
 
-exports.style = style;
-exports.watch = watch;
+gulp.task('build', build);
+
+export default build;
